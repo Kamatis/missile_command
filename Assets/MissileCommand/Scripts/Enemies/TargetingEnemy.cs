@@ -2,12 +2,6 @@
 
 public class TargetingEnemy : Enemy
 {
-    public Vector3 target = Vector3.zero;
-
-    private void Start()
-    {
-        
-    }
 
     public override void Attack()
     {

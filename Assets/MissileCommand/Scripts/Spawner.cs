@@ -53,6 +53,11 @@ public class Spawner : MonoBehaviour
     private void Spawn()
     {
         Enemy enemy = Instantiate(enemyToSpawn, GetSpawnPoint(), Quaternion.identity);
+
+        if (enemy.hasTarget)
+        {
+            enemy.target = PlayerBuildings.GetRandomBuilding().transform.position;
+        }
     }
 
     private Vector2 GetSpawnPoint()
