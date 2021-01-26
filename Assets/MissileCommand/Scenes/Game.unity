@@ -133,6 +133,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: Base (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1027956540}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuildingDestroyed
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 18460079}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Building, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 7759057117186786786, guid: 8b67167bceafebc4988b48facfc86ac4,
         type: 3}
       propertyPath: m_RootOrder
@@ -217,6 +252,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 34580901}
+  - component: {fileID: 34580902}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -238,6 +274,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &34580902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34580900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b67ea6e76537e114087f8a2193b5c944, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawner: {fileID: 1420479906}
 --- !u!1001 &47785422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -248,6 +297,34 @@ PrefabInstance:
     - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
       propertyPath: rebuildSpeed
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1027956540}
+    - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuildingDestroyed
+      objectReference: {fileID: 0}
+    - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 47785424}
+    - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Building, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3316265908475036845, guid: 6bd6eb769e6b9bc4fb55725a84deee48,
         type: 3}
@@ -341,6 +418,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: Base
       objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1027956540}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuildingDestroyed
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 77919090}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Building, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 7759057117186786786, guid: 8b67167bceafebc4988b48facfc86ac4,
         type: 3}
       propertyPath: m_RootOrder
@@ -426,6 +538,34 @@ PrefabInstance:
     - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
       propertyPath: rebuildSpeed
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1027956540}
+    - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuildingDestroyed
+      objectReference: {fileID: 0}
+    - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 185774657}
+    - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Building, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3316265908475036845, guid: 6bd6eb769e6b9bc4fb55725a84deee48,
         type: 3}
@@ -696,6 +836,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Base (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1027956540}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuildingDestroyed
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 480548392}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Building, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7759057117186786786, guid: 8b67167bceafebc4988b48facfc86ac4,
         type: 3}
@@ -1082,6 +1257,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: Base (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1027956540}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuildingDestroyed
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1216589435}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Building, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 7759057117186786786, guid: 8b67167bceafebc4988b48facfc86ac4,
         type: 3}
       propertyPath: m_RootOrder
@@ -1284,6 +1494,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: Base (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1027956540}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuildingDestroyed
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1422752106}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Building, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 7759057117186786786, guid: 8b67167bceafebc4988b48facfc86ac4,
         type: 3}
       propertyPath: m_RootOrder
@@ -1370,6 +1615,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Base (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1027956540}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuildingDestroyed
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1566349908}
+    - target: {fileID: 3612559729588667078, guid: 8b67167bceafebc4988b48facfc86ac4,
+        type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Building, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7759057117186786786, guid: 8b67167bceafebc4988b48facfc86ac4,
         type: 3}
@@ -1726,6 +2006,34 @@ PrefabInstance:
     - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
       propertyPath: rebuildSpeed
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1027956540}
+    - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBuildingDestroyed
+      objectReference: {fileID: 0}
+    - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2111633480}
+    - target: {fileID: 47785424, guid: 6bd6eb769e6b9bc4fb55725a84deee48, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Building, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3316265908475036845, guid: 6bd6eb769e6b9bc4fb55725a84deee48,
         type: 3}
