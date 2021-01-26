@@ -1,10 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+    [SerializeField]
+    private Spawner _spawner;
+
     public void OnPlayButtonTapped()
     {
         SceneManager.LoadScene("Game");
@@ -15,8 +16,15 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
+    public void GameOver()
+    {
+        _spawner.StopSpawning();
+    }
+
+    public static GameController Instance;
     private void Awake()
     {
+        Instance = this;
         DontDestroyOnLoad(gameObject);
     }
 }

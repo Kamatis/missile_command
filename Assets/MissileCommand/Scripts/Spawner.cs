@@ -29,6 +29,11 @@ public class Spawner : MonoBehaviour
         StartCoroutine(StartSpawningCoroutine());
     }
 
+    public void StopSpawning()
+    {
+        _canSpawn = false;
+    }
+
     private IEnumerator StartSpawningCoroutine()
     {
         yield return new WaitForSeconds(spawnDelay);
@@ -57,11 +62,6 @@ public class Spawner : MonoBehaviour
         if (enemy.hasTarget)
         {
             enemy.target = PlayerBuildings.GetRandomBuilding().transform.position;
-            // Temporary
-            if(enemy.target == null)
-            {
-                Destroy(enemy);
-            }
         }
     }
 
