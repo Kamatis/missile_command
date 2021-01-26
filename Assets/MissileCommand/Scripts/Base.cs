@@ -20,6 +20,8 @@ public class Base : Building
         {
             _isDead = true;
             onDeath?.Invoke();
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
     }
 

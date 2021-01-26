@@ -12,6 +12,7 @@ public class Cannon : Building
     private bool _canFire = true;
 
     private bool _isDead = false;
+    private bool _isRebuilding = false;
 
     public void Fire(Vector2 target, float moveSpeed, float power)
     {
@@ -26,7 +27,7 @@ public class Cannon : Building
 
     public bool CanFire()
     {
-        return _canFire;
+        return _canFire && IsAlive();
     }
 
     private IEnumerator Reload()
@@ -35,8 +36,36 @@ public class Cannon : Building
         _canFire = true;
     }
 
+    private IEnumerator Rebuild()
+    {
+        _isRebuilding = true;
+        yield return new WaitForSeconds(rebuildSpeed);
+        _isRebuilding = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Enemy")
+        {
+            Destroy(collision.gameObject);
+            if(!_isRebuilding && !_isDead)
+            {
+                StartCoroutine(Rebuild());
+            } else if(_isRebuilding)
+            {
+                Die();
+            }
+        }
+    }
+
+    private void Die()
+    {
+        _isDead = true;
+        Destroy(gameObject);
+    }
+
     public override bool IsAlive()
     {
-        return !_isDead;
+        return !_isDead && !_isRebuilding;
     }
 }
