@@ -24,6 +24,8 @@ public class Explosion : MonoBehaviour
     {
         if (collision.tag == "Enemy")
         {
+            Enemy enemy = collision.GetComponent<Enemy>();
+            ScoreController.Instance.CurrentPoints += enemy.point;
             Destroy(collision.gameObject);
         }
     }
