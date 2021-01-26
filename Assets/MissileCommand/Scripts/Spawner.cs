@@ -1,9 +1,10 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public Enemy enemyToSpawn;
+    public List<Enemy> enemyToSpawn;
 
     public float initialSpawnRate;
     public float spawnRateDecay;
@@ -57,7 +58,7 @@ public class Spawner : MonoBehaviour
 
     private void Spawn()
     {
-        Enemy enemy = Instantiate(enemyToSpawn, GetSpawnPoint(), Quaternion.identity);
+        Enemy enemy = Instantiate(enemyToSpawn[Random.Range(0, enemyToSpawn.Count)], GetSpawnPoint(), Quaternion.identity);
 
         if (enemy.hasTarget)
         {

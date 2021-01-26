@@ -1610,8 +1610,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c145279c05260d4fa7a5ebfec8b9bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyToSpawn: {fileID: 5216406652416651804, guid: 317fc272414b33646879fa56f0df81d9,
-    type: 3}
+  enemyToSpawn:
+  - {fileID: 5216406652416651804, guid: 317fc272414b33646879fa56f0df81d9, type: 3}
+  - {fileID: 5216406652416651804, guid: c8e3a42bcf1dd9f44be44c668964e0b3, type: 3}
+  - {fileID: 5216406652416651804, guid: 3ffc5ccaa1dafd140aca06c488442d37, type: 3}
   initialSpawnRate: 2
   spawnRateDecay: 0.01
   minSpawnRate: 0.5
