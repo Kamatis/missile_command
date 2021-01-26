@@ -5,6 +5,7 @@ public class Bullet : MonoBehaviour
     public float moveSpeed;
     public float power;
     public Vector3 target;
+    public Explosion explosion;
 
     private void Update()
     {
@@ -18,6 +19,8 @@ public class Bullet : MonoBehaviour
 
     private void Explode()
     {
+        Explosion epxlosion = Instantiate(explosion, transform.position, Quaternion.identity);
+        explosion.power = power;
         Destroy(gameObject);
     }
 }
