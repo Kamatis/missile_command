@@ -6,6 +6,7 @@ public abstract class Enemy : MonoBehaviour
     public float moveSpeed = 2f;
     public Vector3 target;
     public bool hasTarget;
+    public int point;
 
     protected virtual void Update()
     {
