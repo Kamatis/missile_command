@@ -5,8 +5,6 @@ using UnityEngine.Events;
 
 public class Base : Building
 {
-    public OnDeath onDeath;
-
     private bool _isDead;
 
     public override bool IsAlive()
@@ -24,8 +22,4 @@ public class Base : Building
             Destroy(gameObject);
         }
     }
-
-
-    [System.Serializable]
-    public class OnDeath : UnityEvent { }
 }

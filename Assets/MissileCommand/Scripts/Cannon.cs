@@ -53,6 +53,7 @@ public class Cannon : Building
                 StartCoroutine(Rebuild());
             } else if(_isRebuilding)
             {
+                onDeath?.Invoke();
                 Die();
             }
         }
