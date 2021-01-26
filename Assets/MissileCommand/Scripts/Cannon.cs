@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cannon : MonoBehaviour
+public class Cannon : Building
 {
     public float reloadSpeed;
     public float rebuildSpeed;
@@ -10,6 +10,8 @@ public class Cannon : MonoBehaviour
 
     private float _lastFire = 0f;
     private bool _canFire = true;
+
+    private bool _isDead = false;
 
     public void Fire(Vector2 target, float moveSpeed, float power)
     {
@@ -31,5 +33,10 @@ public class Cannon : MonoBehaviour
     {
         yield return new WaitForSeconds(reloadSpeed);
         _canFire = true;
+    }
+
+    public override bool IsAlive()
+    {
+        return !_isDead;
     }
 }
