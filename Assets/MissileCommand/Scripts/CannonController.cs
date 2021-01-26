@@ -21,7 +21,7 @@ public class CannonController : MonoBehaviour
         float minimumDistance = float.MaxValue;
         foreach(Cannon cannon in cannons)
         {
-            if(cannon.CanFire())
+            if(cannon != null && cannon.CanFire())
             {
                 float distance = Mathf.Abs(cannon.transform.position.x - targetPosition.x);
                 if (distance < minimumDistance)
