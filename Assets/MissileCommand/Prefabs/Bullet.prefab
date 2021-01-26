@@ -97,3 +97,5 @@ MonoBehaviour:
   moveSpeed: 0
   power: 0
   target: {x: 0, y: 0, z: 0}
+  explosion: {fileID: 4891078601147593114, guid: f82297e0e97aee247a4630c2013b4da6,
+    type: 3}
