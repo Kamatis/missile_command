@@ -5,11 +5,14 @@ using UnityEngine;
 public class CannonController : MonoBehaviour
 {
     public List<Cannon> cannons;
+    public float fireRate = 5f;
+    public float bulletSpeed = 5f;
+    public float bulletPower = 2f;
 
     public void OnTappedScreen(Vector2 position)
     {
         Vector2 worldPosition = Camera.main.ScreenToWorldPoint(position);
-        GetNearestAvailableCannon(worldPosition)?.Fire(worldPosition, 1f, 1f);
+        GetNearestAvailableCannon(worldPosition)?.Fire(worldPosition, bulletSpeed, bulletPower);
     }
 
     private Cannon GetNearestAvailableCannon(Vector2 targetPosition)
