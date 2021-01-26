@@ -5,6 +5,10 @@ public class GameController : MonoBehaviour
 {
     [SerializeField]
     private Spawner _spawner;
+    [SerializeField]
+    private GameObject _gameOverObject;
+    [SerializeField]
+    private GameObject _inputObject;
 
     public void OnPlayButtonTapped()
     {
@@ -19,6 +23,8 @@ public class GameController : MonoBehaviour
     public void GameOver()
     {
         _spawner.StopSpawning();
+        _gameOverObject.SetActive(true);
+        _inputObject.SetActive(false);
     }
 
     public static GameController Instance;
