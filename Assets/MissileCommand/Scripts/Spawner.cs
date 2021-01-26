@@ -57,6 +57,11 @@ public class Spawner : MonoBehaviour
         if (enemy.hasTarget)
         {
             enemy.target = PlayerBuildings.GetRandomBuilding().transform.position;
+            // Temporary
+            if(enemy.target == null)
+            {
+                Destroy(enemy);
+            }
         }
     }
 
