@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 4925727400536510241}
   - component: {fileID: 7970842470272584339}
   - component: {fileID: 5216406652416651804}
+  - component: {fileID: -7202198019289908809}
   m_Layer: 0
   m_Name: TargetingEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,3 +99,19 @@ MonoBehaviour:
   moveSpeed: 2
   target: {x: 0, y: 0, z: 0}
   hasTarget: 1
+--- !u!58 &-7202198019289908809
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119152566448124279}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.00182724}
+  serializedVersion: 2
+  m_Radius: 0.2496891
